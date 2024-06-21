@@ -16,5 +16,6 @@ typedef struct Snake {
 
 typedef struct Food {
 	Vector2 position;
-	Texture texture;
+	Texture* texture;
+	int frame;
 }Food;
