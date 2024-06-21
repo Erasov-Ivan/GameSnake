@@ -29,6 +29,7 @@ int main()
     if (CheckResult(result)) { return 0; }
     Food* food = result->result;
 
+    InitAudioDevice();
     Sound audio = LoadSound("audio.mp3");
     SetSoundVolume(audio, 1.0);
     PlaySound(audio);
